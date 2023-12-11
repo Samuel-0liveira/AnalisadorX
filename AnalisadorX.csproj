@@ -269,6 +269,12 @@
     <Compile Include="CatalogoDeMutantes.Designer.cs">
       <DependentUpon>CatalogoDeMutantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Banco de Dados\ConfiguracaoBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banco de Dados\ConfiguracaoBanco.Designer.cs">
+      <DependentUpon>ConfiguracaoBanco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     <Compile Include="TelaDeNovoUsuario.Designer.cs">
       <DependentUpon>TelaDeNovoUsuario.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Banco de Dados\ConfiguracaoBanco.resx">
+      <DependentUpon>ConfiguracaoBanco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CatalogoDeMutantes.resx">
       <DependentUpon>CatalogoDeMutantes.cs</DependentUpon>
     </EmbeddedResource>
