@@ -225,6 +225,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_269444FB872F400993F390A7018CB9A3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_26B72FE70CFE3BA24DCC8BE8C14C3F6E"
         "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
         "MsmSig" = "8:_UNDEFINED"
@@ -1330,19 +1336,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_13CBD5BA5A2BA97100896D1CA7213E9E"
+        "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_14F1CCC0F83E4848BF7CA42814BFF33B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -2173,6 +2173,12 @@
         "OwnerKey" = "8:_B01731939876C8F97FF5CFD6676188E7"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_13CBD5BA5A2BA97100896D1CA7213E9E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -2191,6 +2197,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -2207,6 +2229,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -3009,6 +3039,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_269444FB872F400993F390A7018CB9A3"
+            {
+            "SourcePath" = "8:..\\..\\Icones\\Cadeado.png"
+            "TargetName" = "8:Cadeado.png"
+            "Tag" = "8:"
+            "Folder" = "8:_B18FE62825934469930C3E8170D5A80A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_26B72FE70CFE3BA24DCC8BE8C14C3F6E"
@@ -6857,7 +6907,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:AnalisadorX"
         "ProductCode" = "8:{76B78B52-D28A-4816-8058-065AE1010EC5}"
-        "PackageCode" = "8:{23DEA2C4-78BA-4832-863D-7E6149C79DA7}"
+        "PackageCode" = "8:{FD2EE89F-1996-4322-A429-EA784004A6B9}"
         "UpgradeCode" = "8:{E1424E55-E449-4E13-BCD1-EC404C1AFA86}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
