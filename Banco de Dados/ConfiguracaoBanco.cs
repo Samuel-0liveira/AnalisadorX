@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnalisadorX.Banco_de_Dados;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace AnalisadorX
         public Frm_ConfiguracaoBanco()
         {
             InitializeComponent();
+        }
+
+        private void btn_SalvarInfo_Click(object sender, EventArgs e)
+        {
+            Conexao con = new Conexao();
+            con.PegarStringDeConexao(txt_InformacaoServidor.Text, txt_InformacaoPorta.Text, txt_InformacaoUser.Text, txt_InformacaoSenha.Text, txt_InformacaoData.Text);
         }
     }
 }

@@ -152,6 +152,7 @@
             this.btn_SalvarInfo.TabIndex = 11;
             this.btn_SalvarInfo.Text = "Salvar configurações";
             this.btn_SalvarInfo.UseVisualStyleBackColor = true;
+            this.btn_SalvarInfo.Click += new System.EventHandler(this.btn_SalvarInfo_Click);
             // 
             // txt_InformacaoServidor
             // 
