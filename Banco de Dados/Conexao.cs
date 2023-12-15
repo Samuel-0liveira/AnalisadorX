@@ -24,7 +24,7 @@ namespace AnalisadorX.Banco_de_Dados
 
     public class Conexao
     {
-        NpgsqlConnection con = new NpgsqlConnection("Server = 192.168.15.8; Port = 5432; User Id = postgres; Password = Dantemustdie66; Database = db_projetox;");
+        NpgsqlConnection con = new NpgsqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
         public Conexao()
         {
             con.Open();

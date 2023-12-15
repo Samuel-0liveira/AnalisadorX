@@ -63,6 +63,16 @@ namespace AnalisadorX
         {
             //EncryptConnectionString(false, "AnalisadorX.exe");
             InitializeComponent();
+
+            FecharForms();
+
+            var configBanco = new Frm_ConfiguracaoBanco()
+            {
+                MdiParent = this
+            };
+
+            configBanco.Dock = DockStyle.Fill;
+            configBanco.Show();
         }
 
         private void entrarToolStripMenuItem_Click(object sender, EventArgs e)
