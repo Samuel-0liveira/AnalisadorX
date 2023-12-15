@@ -73,16 +73,6 @@ namespace AnalisadorX.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cadeado {
-            get {
-                object obj = ResourceManager.GetObject("Cadeado", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Cerebro {
             get {
                 object obj = ResourceManager.GetObject("Cerebro", resourceCulture);

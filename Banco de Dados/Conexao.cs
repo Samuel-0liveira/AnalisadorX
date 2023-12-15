@@ -22,30 +22,8 @@ namespace AnalisadorX.Banco_de_Dados
         public string Classificacao { get; set; }
     }
 
-    public class InfoStringConexao { 
-        public string Server { get; set; }
-        public string Port { get; set; }
-        public string User { get; set; }
-        public string Password { get; set; }
-        public string Database { get; set; }
-    }
-
     public class Conexao
     {
-        public void PegarStringDeConexao(string servidor, string porta, string user, string senha, string banco)
-        {
-            InfoStringConexao infoString = new InfoStringConexao();
-
-            infoString.Server = servidor;
-            infoString.Port = porta;
-            infoString.User = user;
-            infoString.Password = senha;
-            infoString.Database = banco;
-        }
-
-        static InfoStringConexao info = new InfoStringConexao();
-
-        //NpgsqlConnection con = new NpgsqlConnection("Server = " + info.Server + ";" + "Port = " + info.Port + ";" + "User Id = " + info.User + ";" + "Password = " + info.Password + ";" + "Database = " + info.Database + ";");
         NpgsqlConnection con = new NpgsqlConnection("Server = 192.168.15.8; Port = 5432; User Id = postgres; Password = Dantemustdie66; Database = db_projetox;");
         public Conexao()
         {
