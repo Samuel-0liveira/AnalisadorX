@@ -36,6 +36,7 @@
             this.mutanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catálogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuraçãoDoBancoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +45,8 @@
             this.menuStrip1.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.analisadorToolStripMenuItem,
-            this.mutanteToolStripMenuItem});
+            this.mutanteToolStripMenuItem,
+            this.configuraçãoDoBancoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -63,14 +65,14 @@
             // entrarToolStripMenuItem
             // 
             this.entrarToolStripMenuItem.Name = "entrarToolStripMenuItem";
-            this.entrarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.entrarToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
             this.entrarToolStripMenuItem.Text = "Entrar";
             this.entrarToolStripMenuItem.Click += new System.EventHandler(this.entrarToolStripMenuItem_Click);
             // 
             // novoUsuárioToolStripMenuItem
             // 
             this.novoUsuárioToolStripMenuItem.Name = "novoUsuárioToolStripMenuItem";
-            this.novoUsuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.novoUsuárioToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
             this.novoUsuárioToolStripMenuItem.Text = "Novo Usuário";
             this.novoUsuárioToolStripMenuItem.Click += new System.EventHandler(this.novoUsuárioToolStripMenuItem_Click);
             // 
@@ -96,6 +98,13 @@
             this.catálogoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.catálogoToolStripMenuItem.Text = "Catálogo";
             this.catálogoToolStripMenuItem.Click += new System.EventHandler(this.catálogoToolStripMenuItem_Click);
+            // 
+            // configuraçãoDoBancoToolStripMenuItem
+            // 
+            this.configuraçãoDoBancoToolStripMenuItem.Name = "configuraçãoDoBancoToolStripMenuItem";
+            this.configuraçãoDoBancoToolStripMenuItem.Size = new System.Drawing.Size(171, 24);
+            this.configuraçãoDoBancoToolStripMenuItem.Text = "Configuração do Banco";
+            this.configuraçãoDoBancoToolStripMenuItem.Click += new System.EventHandler(this.configuraçãoDoBancoToolStripMenuItem_Click);
             // 
             // Frm_Principal
             // 
@@ -128,6 +137,7 @@
         private System.Windows.Forms.ToolStripMenuItem mutanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem catálogoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configuraçãoDoBancoToolStripMenuItem;
     }
 }
 

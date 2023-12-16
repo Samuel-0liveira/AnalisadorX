@@ -61,11 +61,9 @@ namespace AnalisadorX
 
         public Frm_Principal()
         {
-            //EncryptConnectionString(false, "AnalisadorX.exe");
             InitializeComponent();
 
             FecharForms();
-
             var configBanco = new Frm_ConfiguracaoBanco()
             {
                 MdiParent = this
@@ -73,6 +71,7 @@ namespace AnalisadorX
 
             configBanco.Dock = DockStyle.Fill;
             configBanco.Show();
+            //EncryptConnectionString(false, "AnalisadorX.exe");
         }
 
         private void entrarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -121,6 +120,18 @@ namespace AnalisadorX
 
             catalogo.Dock = DockStyle.Fill;
             catalogo.Show();
+        }
+
+        private void configuraçãoDoBancoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FecharForms();
+            var configBanco = new Frm_ConfiguracaoBanco()
+            {
+                MdiParent = this
+            };
+
+            configBanco.Dock = DockStyle.Fill;
+            configBanco.Show();
         }
     }
 }

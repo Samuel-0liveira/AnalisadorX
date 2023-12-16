@@ -27,8 +27,15 @@ namespace AnalisadorX.Banco_de_Dados
         NpgsqlConnection con = new NpgsqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
         public Conexao()
         {
-            con.Open();
-            con.Close();
+            try
+            {
+                con.Open();
+                con.Close();
+            } catch (Exception ex) {
+                  MessageBox.Show("Erro: " + ex);
+                  MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
+                  con.Close();
+            }
         }
         public bool VerificarUsuarioNoBanco(string usuario)
         {
@@ -61,6 +68,7 @@ namespace AnalisadorX.Banco_de_Dados
             } 
             catch (Exception ex) {
                 MessageBox.Show("Erro: " + ex);
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
 
@@ -99,6 +107,7 @@ namespace AnalisadorX.Banco_de_Dados
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex);
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
 
@@ -125,7 +134,7 @@ namespace AnalisadorX.Banco_de_Dados
                 if (reader.HasRows)
                 {
                     okAlter = false;
-                    MessageBox.Show("Nome de usuário já utilizado!");
+                    MessageBox.Show("Mutante já cadastrado!");
                 }
                 else
                 {
@@ -137,6 +146,7 @@ namespace AnalisadorX.Banco_de_Dados
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex);
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
 
@@ -170,6 +180,7 @@ namespace AnalisadorX.Banco_de_Dados
             }
             catch (Exception ex) {
                 MessageBox.Show("Erro: " + ex);
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
         }
@@ -226,6 +237,7 @@ namespace AnalisadorX.Banco_de_Dados
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex);
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
 
@@ -256,6 +268,7 @@ namespace AnalisadorX.Banco_de_Dados
             }
             catch (Exception ex) {
                 MessageBox.Show("Erro: " + ex);
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
         }
@@ -293,6 +306,7 @@ namespace AnalisadorX.Banco_de_Dados
             }
             catch (Exception ex) {
                 MessageBox.Show("Erro: " + ex);
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
         }
@@ -329,6 +343,7 @@ namespace AnalisadorX.Banco_de_Dados
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex);
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
         }
