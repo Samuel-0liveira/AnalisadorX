@@ -32,9 +32,9 @@ namespace AnalisadorX.Banco_de_Dados
                 con.Open();
                 con.Close();
             } catch (Exception ex) {
+                  MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!\nA seguir, o relatório do erro ocorrido.");
                   MessageBox.Show("Erro: " + ex);
-                  MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
-                  con.Close();
+                con.Close();
             }
         }
         public bool VerificarUsuarioNoBanco(string usuario)
@@ -67,8 +67,8 @@ namespace AnalisadorX.Banco_de_Dados
                 con.Close();
             } 
             catch (Exception ex) {
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!\nA seguir, o relatório do erro ocorrido.");
                 MessageBox.Show("Erro: " + ex);
-                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
 
@@ -106,8 +106,8 @@ namespace AnalisadorX.Banco_de_Dados
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!\nA seguir, o relatório do erro ocorrido.");
                 MessageBox.Show("Erro: " + ex);
-                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
 
@@ -145,8 +145,8 @@ namespace AnalisadorX.Banco_de_Dados
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!\nA seguir, o relatório do erro ocorrido.");
                 MessageBox.Show("Erro: " + ex);
-                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
 
@@ -179,8 +179,8 @@ namespace AnalisadorX.Banco_de_Dados
                 MessageBox.Show("CADASTRO EFETUADO COM SUCESSO!");
             }
             catch (Exception ex) {
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!\nA seguir, o relatório do erro ocorrido.");
                 MessageBox.Show("Erro: " + ex);
-                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
         }
@@ -236,8 +236,8 @@ namespace AnalisadorX.Banco_de_Dados
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!\nA seguir, o relatório do erro ocorrido.");
                 MessageBox.Show("Erro: " + ex);
-                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
 
@@ -267,8 +267,8 @@ namespace AnalisadorX.Banco_de_Dados
                 MessageBox.Show("Mutante cadastrado com sucesso!");
             }
             catch (Exception ex) {
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!\nA seguir, o relatório do erro ocorrido.");
                 MessageBox.Show("Erro: " + ex);
-                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
         }
@@ -305,8 +305,8 @@ namespace AnalisadorX.Banco_de_Dados
                 con.Close();
             }
             catch (Exception ex) {
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!\nA seguir, o relatório do erro ocorrido.");
                 MessageBox.Show("Erro: " + ex);
-                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
         }
@@ -342,8 +342,8 @@ namespace AnalisadorX.Banco_de_Dados
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!\nA seguir, o relatório do erro ocorrido.");
                 MessageBox.Show("Erro: " + ex);
-                MessageBox.Show("Por favor, verifique as informações do seu banco e adicione as mesmas na aba de Configuração do Banco!");
                 con.Close();
             }
         }

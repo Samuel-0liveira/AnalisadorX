@@ -41,6 +41,11 @@
             this.btn_SalvarInfo = new System.Windows.Forms.Button();
             this.txt_InformacaoServidor = new System.Windows.Forms.TextBox();
             this.pb_Cadeado = new System.Windows.Forms.PictureBox();
+            this.lbl_A1 = new System.Windows.Forms.Label();
+            this.lbl_A2 = new System.Windows.Forms.Label();
+            this.lbl_A3 = new System.Windows.Forms.Label();
+            this.lbl_A4 = new System.Windows.Forms.Label();
+            this.lbl_A5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Cadeado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,6 +178,66 @@
             this.pb_Cadeado.TabIndex = 12;
             this.pb_Cadeado.TabStop = false;
             // 
+            // lbl_A1
+            // 
+            this.lbl_A1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_A1.AutoSize = true;
+            this.lbl_A1.ForeColor = System.Drawing.Color.Red;
+            this.lbl_A1.Location = new System.Drawing.Point(417, 266);
+            this.lbl_A1.Name = "lbl_A1";
+            this.lbl_A1.Size = new System.Drawing.Size(196, 16);
+            this.lbl_A1.TabIndex = 18;
+            this.lbl_A1.Text = "*O campo server não pode ficar vazio!";
+            this.lbl_A1.Visible = false;
+            // 
+            // lbl_A2
+            // 
+            this.lbl_A2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_A2.AutoSize = true;
+            this.lbl_A2.ForeColor = System.Drawing.Color.Red;
+            this.lbl_A2.Location = new System.Drawing.Point(417, 312);
+            this.lbl_A2.Name = "lbl_A2";
+            this.lbl_A2.Size = new System.Drawing.Size(186, 16);
+            this.lbl_A2.TabIndex = 19;
+            this.lbl_A2.Text = "*O campo port não pode ficar vazio!";
+            this.lbl_A2.Visible = false;
+            // 
+            // lbl_A3
+            // 
+            this.lbl_A3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_A3.AutoSize = true;
+            this.lbl_A3.ForeColor = System.Drawing.Color.Red;
+            this.lbl_A3.Location = new System.Drawing.Point(417, 354);
+            this.lbl_A3.Name = "lbl_A3";
+            this.lbl_A3.Size = new System.Drawing.Size(199, 16);
+            this.lbl_A3.TabIndex = 20;
+            this.lbl_A3.Text = "*O campo user id não pode ficar vazio!";
+            this.lbl_A3.Visible = false;
+            // 
+            // lbl_A4
+            // 
+            this.lbl_A4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_A4.AutoSize = true;
+            this.lbl_A4.ForeColor = System.Drawing.Color.Red;
+            this.lbl_A4.Location = new System.Drawing.Point(417, 395);
+            this.lbl_A4.Name = "lbl_A4";
+            this.lbl_A4.Size = new System.Drawing.Size(212, 16);
+            this.lbl_A4.TabIndex = 21;
+            this.lbl_A4.Text = "*O campo password não pode ficar vazio!";
+            this.lbl_A4.Visible = false;
+            // 
+            // lbl_A5
+            // 
+            this.lbl_A5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_A5.AutoSize = true;
+            this.lbl_A5.ForeColor = System.Drawing.Color.Red;
+            this.lbl_A5.Location = new System.Drawing.Point(417, 438);
+            this.lbl_A5.Name = "lbl_A5";
+            this.lbl_A5.Size = new System.Drawing.Size(211, 16);
+            this.lbl_A5.TabIndex = 22;
+            this.lbl_A5.Text = "*O campo database não pode ficar vazio!";
+            this.lbl_A5.Visible = false;
+            // 
             // Frm_ConfiguracaoBanco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
@@ -180,6 +245,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 554);
             this.ControlBox = false;
+            this.Controls.Add(this.lbl_A5);
+            this.Controls.Add(this.lbl_A4);
+            this.Controls.Add(this.lbl_A3);
+            this.Controls.Add(this.lbl_A2);
+            this.Controls.Add(this.lbl_A1);
             this.Controls.Add(this.pb_Cadeado);
             this.Controls.Add(this.btn_SalvarInfo);
             this.Controls.Add(this.txt_InformacaoData);
@@ -220,5 +290,10 @@
         private System.Windows.Forms.Button btn_SalvarInfo;
         private System.Windows.Forms.TextBox txt_InformacaoServidor;
         private System.Windows.Forms.PictureBox pb_Cadeado;
+        public System.Windows.Forms.Label lbl_A1;
+        public System.Windows.Forms.Label lbl_A2;
+        public System.Windows.Forms.Label lbl_A3;
+        public System.Windows.Forms.Label lbl_A4;
+        public System.Windows.Forms.Label lbl_A5;
     }
 }
