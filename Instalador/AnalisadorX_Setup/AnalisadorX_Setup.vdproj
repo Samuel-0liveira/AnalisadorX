@@ -69,12 +69,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_050CE16349A3464CAE2D8A4BAF49DDE1"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_05BBE3CDAB21ABA2096B1A0E992B6BDA"
         "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
         "MsmSig" = "8:_UNDEFINED"
@@ -299,6 +293,12 @@
         {
         "MsmKey" = "8:_39963ADE000E50EF003B46FDB2AB7455"
         "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_39963ADE000E50EF003B46FDB2AB7455"
+        "OwnerKey" = "8:_F18AD227086B42C1BC0E3CE2563643CC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1335,6 +1335,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_F18AD227086B42C1BC0E3CE2563643CC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F273C0AC3C56E19A6FD7BF62A2A8E6CC"
         "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
         "MsmSig" = "8:_UNDEFINED"
@@ -1372,13 +1378,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_050CE16349A3464CAE2D8A4BAF49DDE1"
+        "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
+        "OwnerKey" = "8:_F18AD227086B42C1BC0E3CE2563643CC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -2531,37 +2537,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_050CE16349A3464CAE2D8A4BAF49DDE1"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:AnalisadorX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_050CE16349A3464CAE2D8A4BAF49DDE1"
-                    {
-                    "Name" = "8:AnalisadorX.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\..\\obj\\Debug\\AnalisadorX.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_21EE554DB41E4656934A92D337E9026A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_05BBE3CDAB21ABA2096B1A0E992B6BDA"
@@ -6763,6 +6738,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F18AD227086B42C1BC0E3CE2563643CC"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:AnalisadorX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_F18AD227086B42C1BC0E3CE2563643CC"
+                    {
+                    "Name" = "8:AnalisadorX.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\..\\bin\\Debug\\AnalisadorX.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_21EE554DB41E4656934A92D337E9026A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F273C0AC3C56E19A6FD7BF62A2A8E6CC"
