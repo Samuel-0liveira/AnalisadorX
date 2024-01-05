@@ -89,7 +89,7 @@ namespace AnalisadorX
             {
                 okSenha = false;
                 lbl_Aviso4.Visible = true;
-                MessageBox.Show("A senha deve ter: \n Entre 8 e 13 digítos; \n Ao menos 1 letra maiúscula e minúscula; \n Ao menos um número; \n Um dos caracteres especiais a seguir: $*&@#!");
+                MessageBox.Show("A senha deve ter: \n Entre 8 e 13 digítos; \n Ao menos 1 letra maiúscula; \n Ao menos um número; \n Não pode ter caractere repetido em sequência; \n Um dos caracteres especiais a seguir: $*&@#!");
                 txt_Password.Focus();
             } else
             {
