@@ -141,6 +141,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1377EF0983E840BDBC10E08052A5A0B2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_13CBD5BA5A2BA97100896D1CA7213E9E"
         "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
         "MsmSig" = "8:_UNDEFINED"
@@ -293,12 +299,6 @@
         {
         "MsmKey" = "8:_39963ADE000E50EF003B46FDB2AB7455"
         "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_39963ADE000E50EF003B46FDB2AB7455"
-        "OwnerKey" = "8:_F18AD227086B42C1BC0E3CE2563643CC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1335,12 +1335,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_F18AD227086B42C1BC0E3CE2563643CC"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F273C0AC3C56E19A6FD7BF62A2A8E6CC"
         "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
         "MsmSig" = "8:_UNDEFINED"
@@ -1384,7 +1378,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F18AD227086B42C1BC0E3CE2563643CC"
+        "OwnerKey" = "8:_1377EF0983E840BDBC10E08052A5A0B2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -2754,6 +2748,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1377EF0983E840BDBC10E08052A5A0B2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:AnalisadorX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_1377EF0983E840BDBC10E08052A5A0B2"
+                    {
+                    "Name" = "8:AnalisadorX.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\..\\obj\\Debug\\AnalisadorX.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_21EE554DB41E4656934A92D337E9026A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_13CBD5BA5A2BA97100896D1CA7213E9E"
@@ -6740,37 +6765,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F18AD227086B42C1BC0E3CE2563643CC"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:AnalisadorX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_F18AD227086B42C1BC0E3CE2563643CC"
-                    {
-                    "Name" = "8:AnalisadorX.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\..\\bin\\Debug\\AnalisadorX.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_21EE554DB41E4656934A92D337E9026A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F273C0AC3C56E19A6FD7BF62A2A8E6CC"
             {
             "AssemblyRegister" = "3:1"
@@ -6994,7 +6988,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:AnalisadorX"
         "ProductCode" = "8:{76B78B52-D28A-4816-8058-065AE1010EC5}"
-        "PackageCode" = "8:{FD2EE89F-1996-4322-A429-EA784004A6B9}"
+        "PackageCode" = "8:{729F1D53-4667-45F0-B968-3FBDC130D193}"
         "UpgradeCode" = "8:{E1424E55-E449-4E13-BCD1-EC404C1AFA86}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
