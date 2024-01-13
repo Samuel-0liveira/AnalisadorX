@@ -8,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Principal;
+using System.IO;
+using System.Reflection;
+using System.Security.AccessControl;
 
 namespace AnalisadorX
 {
@@ -134,6 +138,17 @@ namespace AnalisadorX
 
             if (tudoOk == true)
             {
+                string codeBase = Assembly.GetExecutingAssembly().CodeBase;
+                UriBuilder uri = new UriBuilder(codeBase);
+                string launcherPath = Uri.UnescapeDataString(uri.Path);
+
+                string userAdm = WindowsIdentity.GetCurrent().Name.Split('\\')[1].Trim();
+                DirectoryInfo pastaInfo = new DirectoryInfo(launcherPath);
+                DirectorySecurity ds = new DirectorySecurity();
+
+                ds.AddAccessRule(new FileSystemAccessRule(userAdm, FileSystemRights.Modify, AccessControlType.Allow));
+                ds.SetAccessRuleProtection(false, false);
+                pastaInfo.SetAccessControl(ds);
 
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                 var connectionStringsSection = (ConnectionStringsSection)config.GetSection("connectionStrings");
