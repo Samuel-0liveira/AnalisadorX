@@ -141,12 +141,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_1377EF0983E840BDBC10E08052A5A0B2"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_13CBD5BA5A2BA97100896D1CA7213E9E"
         "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
         "MsmSig" = "8:_UNDEFINED"
@@ -303,6 +297,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_39963ADE000E50EF003B46FDB2AB7455"
+        "OwnerKey" = "8:_3CCEC91310BB4FB7BD843B7C7610DAE3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3BA649B68879876B4B42C57796F1866B"
         "OwnerKey" = "8:_E30398BD3D8B7D6B3C86900D6F8D6D09"
         "MsmSig" = "8:_UNDEFINED"
@@ -317,6 +317,12 @@
         {
         "MsmKey" = "8:_3BA649B68879876B4B42C57796F1866B"
         "OwnerKey" = "8:_EE01AB0726304A19B13BEA3145463492"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3CCEC91310BB4FB7BD843B7C7610DAE3"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1378,7 +1384,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1377EF0983E840BDBC10E08052A5A0B2"
+        "OwnerKey" = "8:_3CCEC91310BB4FB7BD843B7C7610DAE3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -2750,37 +2756,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1377EF0983E840BDBC10E08052A5A0B2"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:AnalisadorX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_1377EF0983E840BDBC10E08052A5A0B2"
-                    {
-                    "Name" = "8:AnalisadorX.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\..\\obj\\Debug\\AnalisadorX.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_21EE554DB41E4656934A92D337E9026A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_13CBD5BA5A2BA97100896D1CA7213E9E"
             {
             "AssemblyRegister" = "3:1"
@@ -3492,6 +3467,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3CCEC91310BB4FB7BD843B7C7610DAE3"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:AnalisadorX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_3CCEC91310BB4FB7BD843B7C7610DAE3"
+                    {
+                    "Name" = "8:AnalisadorX.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\..\\bin\\Debug\\AnalisadorX.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_21EE554DB41E4656934A92D337E9026A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3CE8272EA208A1789BE6DE96C61054BC"
