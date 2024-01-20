@@ -24,7 +24,7 @@ namespace AnalisadorX.Banco_de_Dados
 
     public class Conexao
     {
-        NpgsqlConnection con = new NpgsqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
+        NpgsqlConnection con = new NpgsqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings[1].ConnectionString);
         public Conexao()
         {
             try
