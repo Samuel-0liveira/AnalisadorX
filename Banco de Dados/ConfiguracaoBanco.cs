@@ -193,7 +193,7 @@ namespace AnalisadorX
 
                 MessageBox.Show("Informações do banco cadastradas com sucesso!");
 
-                EncryptConnectionString(false, "AnalisadorX.exe");
+                EncryptConnectionString(true, "AnalisadorX.exe");
 
             } else
             {
