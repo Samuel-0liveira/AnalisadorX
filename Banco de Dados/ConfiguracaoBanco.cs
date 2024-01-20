@@ -22,6 +22,40 @@ namespace AnalisadorX
             InitializeComponent();
         }
 
+        public static void EncryptConnectionString(bool encrypt, string fileName)
+        {
+            Configuration configuration = null;
+
+            try
+            {
+
+                configuration = ConfigurationManager.OpenExeConfiguration(fileName);
+
+                ConnectionStringsSection configSection = configuration.GetSection("connectionStrings") as ConnectionStringsSection;
+
+                if ((!(configSection.ElementInformation.IsLocked)) && (!(configSection.SectionInformation.IsLocked)))
+                {
+                    if (encrypt && !configSection.SectionInformation.IsProtected)
+                    {
+                        configSection.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
+                    }
+
+                    if (!encrypt && configSection.SectionInformation.IsProtected)
+                    {
+                        configSection.SectionInformation.UnprotectSection();
+                    }
+
+                    configSection.SectionInformation.ForceSave = true;
+
+                    configuration.Save();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
         private bool ValidarServer(string s)
         {
             bool okServer;
@@ -158,6 +192,9 @@ namespace AnalisadorX
                 ConfigurationManager.RefreshSection("connectionStrings");
 
                 MessageBox.Show("Informações do banco cadastradas com sucesso!");
+
+                EncryptConnectionString(false, "AnalisadorX.exe");
+
             } else
             {
                 MessageBox.Show("Por favor, reveja as informações colocadas!");

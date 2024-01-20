@@ -25,7 +25,7 @@ namespace AnalisadorX
             }
         }
 
-        public static void EncryptConnectionString(bool encrypt, string fileName)
+        /*public static void EncryptConnectionString(bool encrypt, string fileName)
         {
             Configuration configuration = null;
 
@@ -58,6 +58,7 @@ namespace AnalisadorX
                 MessageBox.Show(ex.ToString());
             }
         }
+        */
 
         public Frm_Principal()
         {
@@ -71,7 +72,7 @@ namespace AnalisadorX
 
             configBanco.Dock = DockStyle.Fill;
             configBanco.Show();
-            EncryptConnectionString(false, "AnalisadorX.exe");
+            //EncryptConnectionString(false, "AnalisadorX.exe");
         }
 
         private void entrarToolStripMenuItem_Click(object sender, EventArgs e)
