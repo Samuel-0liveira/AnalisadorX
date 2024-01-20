@@ -138,7 +138,7 @@ namespace AnalisadorX
 
             if (tudoOk == true)
             {
-                string codeBase = Assembly.GetExecutingAssembly().CodeBase;
+                /* string codeBase = Assembly.GetExecutingAssembly().CodeBase;
                 UriBuilder uri = new UriBuilder(codeBase);
                 string launcherPath = Uri.UnescapeDataString(uri.Path);
 
@@ -149,6 +149,7 @@ namespace AnalisadorX
                 ds.AddAccessRule(new FileSystemAccessRule(userAdm, FileSystemRights.Modify, AccessControlType.Allow));
                 ds.SetAccessRuleProtection(false, false);
                 pastaInfo.SetAccessControl(ds);
+                */
 
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                 var connectionStringsSection = (ConnectionStringsSection)config.GetSection("connectionStrings");
