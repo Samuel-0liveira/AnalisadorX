@@ -1,6 +1,7 @@
 ﻿using Npgsql;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics.Eventing.Reader;
@@ -24,9 +25,46 @@ namespace AnalisadorX.Banco_de_Dados
 
     public class Conexao
     {
+        public static void EncryptConnectionString(bool encrypt, string fileName)
+        {
+            Configuration configuration = null;
+
+            try
+            {
+
+                configuration = ConfigurationManager.OpenExeConfiguration(fileName);
+
+                ConnectionStringsSection configSection = configuration.GetSection("connectionStrings") as ConnectionStringsSection;
+
+                if ((!(configSection.ElementInformation.IsLocked)) && (!(configSection.SectionInformation.IsLocked)))
+                {
+                    if (encrypt && !configSection.SectionInformation.IsProtected)
+                    {
+                        configSection.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
+                    }
+
+                    if (!encrypt && configSection.SectionInformation.IsProtected)
+                    {
+                        configSection.SectionInformation.UnprotectSection();
+                    }
+
+                    configSection.SectionInformation.ForceSave = true;
+
+                    configuration.Save();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
         NpgsqlConnection con = new NpgsqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings[1].ConnectionString);
+
         public Conexao()
         {
+            EncryptConnectionString(true, "AnalisadorX.exe");
+
             try
             {
                 con.Open();

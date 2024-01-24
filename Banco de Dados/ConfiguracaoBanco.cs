@@ -22,40 +22,6 @@ namespace AnalisadorX
             InitializeComponent();
         }
 
-        public static void EncryptConnectionString(bool encrypt, string fileName)
-        {
-            Configuration configuration = null;
-
-            try
-            {
-
-                configuration = ConfigurationManager.OpenExeConfiguration(fileName);
-
-                ConnectionStringsSection configSection = configuration.GetSection("connectionStrings") as ConnectionStringsSection;
-
-                if ((!(configSection.ElementInformation.IsLocked)) && (!(configSection.SectionInformation.IsLocked)))
-                {
-                    if (encrypt && !configSection.SectionInformation.IsProtected)
-                    {
-                        configSection.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
-                    }
-
-                    if (!encrypt && configSection.SectionInformation.IsProtected)
-                    {
-                        configSection.SectionInformation.UnprotectSection();
-                    }
-
-                    configSection.SectionInformation.ForceSave = true;
-
-                    configuration.Save();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
         private bool ValidarServer(string s)
         {
             bool okServer;
@@ -172,19 +138,6 @@ namespace AnalisadorX
 
             if (tudoOk == true)
             {
-                /* string codeBase = Assembly.GetExecutingAssembly().CodeBase;
-                UriBuilder uri = new UriBuilder(codeBase);
-                string launcherPath = Uri.UnescapeDataString(uri.Path);
-
-                string userAdm = WindowsIdentity.GetCurrent().Name.Split('\\')[1].Trim();
-                DirectoryInfo pastaInfo = new DirectoryInfo(launcherPath);
-                DirectorySecurity ds = new DirectorySecurity();
-
-                ds.AddAccessRule(new FileSystemAccessRule(userAdm, FileSystemRights.Modify, AccessControlType.Allow));
-                ds.SetAccessRuleProtection(false, false);
-                pastaInfo.SetAccessControl(ds);
-                */
-
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                 var connectionStringsSection = (ConnectionStringsSection)config.GetSection("connectionStrings");
                 connectionStringsSection.ConnectionStrings["Database"].ConnectionString = "Server = " + server + "; Port = " + port + "; User Id = " + user + "; Password = " + password + "; Database = " + database + ";";
@@ -192,8 +145,6 @@ namespace AnalisadorX
                 ConfigurationManager.RefreshSection("connectionStrings");
 
                 MessageBox.Show("Informações do banco cadastradas com sucesso!");
-
-                EncryptConnectionString(true, "AnalisadorX.exe");
 
             } else
             {
