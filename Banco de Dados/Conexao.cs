@@ -63,7 +63,7 @@ namespace AnalisadorX.Banco_de_Dados
 
         public Conexao()
         {
-            EncryptConnectionString(true, "AnalisadorX.exe");
+            EncryptConnectionString(true, "AnalisadorX.exe.config");
 
             try
             {
