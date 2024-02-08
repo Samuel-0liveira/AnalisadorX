@@ -6967,7 +6967,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:AnalisadorX"
         "ProductCode" = "8:{76B78B52-D28A-4816-8058-065AE1010EC5}"
-        "PackageCode" = "8:{F707B84C-7F0B-4AF2-875A-FB65A44AF324}"
+        "PackageCode" = "8:{959160FA-7256-4CCB-B179-77BFBD2A92CC}"
         "UpgradeCode" = "8:{E1424E55-E449-4E13-BCD1-EC404C1AFA86}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -7087,7 +7087,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_086109DB63AC4A0DA75C5F3844A99595"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1F9EDAFF846F473BB31DEB9FEE91D141"
             {
             "Name" = "8:AnalisadorX"
             "Arguments" = "8:"
@@ -7101,7 +7101,7 @@
             "Icon" = "8:_705FF64E51A742129A79FFF3BF377DE7"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7E7BB73117D04803AD200AABD358B386"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_23AF195111E649858968E2AFA857D36C"
             {
             "Name" = "8:AnalisadorX"
             "Arguments" = "8:"
