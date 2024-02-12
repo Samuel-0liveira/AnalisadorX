@@ -50,7 +50,7 @@ Agora, seguiremos com a instalação, aqui teremos mais um <a href="https://www.
 
 Iremos abrir o arquivo com o bloco de notas, ao rolar para baixo, você encontrará algo semelhante a isso:
 
-<img src="../Downloads/Exemplo.png" tittle="Exemplo">
+<img src="../doc/imagens/Exemplo.png" tittle="Exemplo">
 
 <br>
 
