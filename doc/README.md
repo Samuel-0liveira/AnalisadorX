@@ -56,7 +56,7 @@ Iremos abrir o arquivo com o bloco de notas, ao rolar para baixo, você encontra
 
 Basta alterar a linha abaixo de IPv4 local connections para que fique igual a seguinte:
 
-<img src="../Downloads/Exemplo 2.png" tittle="Exemplo">
+<img src="../doc/imagens/Exemplo 2.png" tittle="Exemplo">
 
 #### Criando nosso banco
 
@@ -67,7 +67,7 @@ Assim que abrir, será requisitado que você crie uma senha mestre para poder co
 
 Depois de criar a senha, vamos abrir a aba de servidores e colocar a senha criada:
 
-<img src="../Downloads/Exemplo 4.png" tittle="Exemplo">
+<img src="../doc/imagens/Exemplo 4.png" tittle="Exemplo">
 
 <br>
 
@@ -75,13 +75,13 @@ Depois de criar a senha, vamos abrir a aba de servidores e colocar a senha criad
 
 Aqui existem duas opções, utilizar a database padrão do pgAdmin ou criar uma nova, caso escolha criar mais uma, clique com o lado direito do mouse em cima de Databases, Create, Database:
 
-<img src="../Downloads/Exemplo 5.png" tittle="Exemplo">
+<img src="../doc/imagens/Exemplo 5.png" tittle="Exemplo">
 
 <br>
 
 Escolha o nome de sua preferência, em seguida, lado direito do mouse e escolha Query Tool: 
 
-<img src="../Downloads/Exemplo 6.png" tittle="Exemplo">
+<img src="../doc/imagens/Exemplo 6.png" tittle="Exemplo">
 
 <br>
 
