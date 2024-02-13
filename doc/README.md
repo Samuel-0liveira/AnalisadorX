@@ -1,5 +1,7 @@
 <h1 align = "center"> Analisador X </h1>
 
+<img align = "middle" src="../doc/imagens/AnalisadorX - Logotipo.png" alt="drawing" width="200" tittle="Exemplo">
+
 <p align = "center">
 <img loading = "lazy" src = "https://img.shields.io/badge/Status-Em_desenvolvimento-blue"/>
 <img loading = "lazy" src = "https://img.shields.io/badge/Licença-MIT-forestgreen"/>
@@ -20,8 +22,8 @@ Projeto em desenvolvimento como parte do meu portfólio, o foco é no backend e 
 - [x] Tela de login;
 - [x] Inclusão de informações no banco de dados;
 - [x] Exibir informações do banco de dados;
-- [ ] Edição e exclusão de informações do banco de dados;
-- [ ] Criação de atalho ao instalar. 
+- [x] Criação de atalho ao instalar;
+- [ ] Edição e exclusão de informações do banco de dados.
 
 <br>
 
