@@ -1,6 +1,8 @@
 <h1 align = "center"> Analisador X </h1>
 
-<img align = "middle" src="../doc/imagens/AnalisadorX - Logotipo.png" alt="drawing" width="200" tittle="Exemplo">
+<p align = "middle">
+<img src="../doc/imagens/AnalisadorX - Logotipo.png" alt="drawing" width="200" tittle="Exemplo">
+</p>
 
 <p align = "center">
 <img loading = "lazy" src = "https://img.shields.io/badge/Status-Em_desenvolvimento-blue"/>
