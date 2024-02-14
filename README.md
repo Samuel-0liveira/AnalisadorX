@@ -1,5 +1,3 @@
-<h1 align = "center"> Analisador X </h1>
-
 <p align = "middle">
 <img src="./doc/imagens/AnalisadorX - Logotipo.png" alt="drawing" width="200" tittle="Exemplo">
 </p>
@@ -39,7 +37,7 @@ Projeto em desenvolvimento, o foco é no backend e o objetivo é estruturar um f
 
 :computer: Veja demonstração do projeto funcionando: <a href="https://github.com/Samuel-0liveira/AnalisadorX/blob/master/doc/FUNCIONALIDADE.md">Funcionalidade</a> :computer:
 
-:speech_balloon: Sugestão de melhoria para o programa? Envio de validação de Issues? Basta enviar um e-mail para: S.Samuels.a.m@hotmail.com. :speech_balloon:<br>
+:speech_balloon: Sugestão de melhoria para o programa? Aprovação de issues? Basta enviar um e-mail para: S.Samuels.a.m@hotmail.com. :speech_balloon:<br>
 
 Caso prefira, pode entrar em contato através de uma das formas a seguir:
 
