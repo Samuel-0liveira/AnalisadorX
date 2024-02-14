@@ -67,7 +67,7 @@ Para recriar o banco de dados utilizado, basta copiar o mesmo do arquivo <a href
 
 Depois dessa aventura que foi configurar e instalar o banco, vamos (finalmente), ao programa principal, é bem simples, basta baixar os arquivos <a href="https://github.com/Samuel-0liveira/AnalisadorX/archive/refs/heads/master.zip">aqui.</a>
 
-Após isso, extraia o arquivo aonde preferir, procure pela pasta do intalador e execute qualquer um dos setup.
+Após isso, extraia o arquivo aonde preferir, procure pela pasta do instalador e execute qualquer um dos setup.
 
 Por fim, basta clicar no atalho criado ou procurar o programa via menu do windows (pesquise por AnalisadorX).
 
