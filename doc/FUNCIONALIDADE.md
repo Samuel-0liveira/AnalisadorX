@@ -1,6 +1,18 @@
 ## :airplane: Exemplos do programa em execução :airplane:
 
-A primeira tela que será vista é a que serve para a configuração do banco de dados:
+A primeira tela que será vista é a que serve para a configuração do banco de dados, seu preenchimento servirá para compor a nossa string de coneção, devem ser preenchidos (na ordem exibida):
+
+- O servidor, que nada mais é que o ID local, é possível colocar apenas localhost que o sistema identificará o mesmo;
+
+- A porta, que é a porta utilizada para a conexão do banco de dados (se você seguiu os passos em requisitos, sua porta será 5432);
+
+- O id de usuário, o padrão é postgres, caso tenha sido alterado, é importante informar o id atual aqui;
+
+- A senha do seu banco de dados;
+
+- O nome do banco que deve ser realizada a conexão.
+
+<br>
 
 <img src="../doc/imagens/Exemplo programa 1.png" tittle="Exemplo programa 1">
 
