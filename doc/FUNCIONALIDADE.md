@@ -1,6 +1,6 @@
 ## :airplane: Exemplos do programa em execução :airplane:
 
-A primeira tela que será vista é a que serve para a configuração do banco de dados, seu preenchimento servirá para compor a nossa string de coneção, devem ser preenchidos (na ordem exibida):
+A primeira tela que será vista é a que serve para a configuração do banco de dados, seu preenchimento servirá para compor a nossa string de conexão, devem ser preenchidos (na ordem exibida):
 
 - O servidor, que nada mais é que o ID local, é possível colocar apenas localhost que o sistema identificará o mesmo;
 
