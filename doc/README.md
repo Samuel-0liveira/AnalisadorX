@@ -43,5 +43,4 @@ Caso prefira, pode entrar em contato através de uma das formas a seguir:
 
 <p>
 <a href="https://www.linkedin.com/in/samuel-gon%C3%A7alves-de-oliveira-1071ab196/"> <img loading = "lazy" src = "https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="https://www.instagram.com/_samuel_s4m_/"> <img loading = "lazy" src = "https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
 </p>
