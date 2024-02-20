@@ -7,8 +7,8 @@
 <img loading = "lazy" src = "https://img.shields.io/badge/Licença-MIT-purple"/>
 <img loading = "lazy" src = "https://img.shields.io/badge/Linguagem-C%23-239120?"/>
 <br>
-<img loading = "lazy" src = "https://img.shields.io/github/watchers/Samuel-0liveira/analisadorX"/>
-<img loading = "lazy" src = "https://img.shields.io/github/stars/Samuel-0liveira/analisadorX"/>
+<img loading = "lazy" src = "https://img.shields.io/github/watchers/Samuel-0liveira/AnalisadorX"/>
+<img loading = "lazy" src = "https://img.shields.io/github/stars/Samuel-0liveira/AnalisadorX"/>
 <img loading = "lazy" src = "https://img.shields.io/github/forks/Samuel-0liveira/AnalisadorX"/>
 </p>
 <br>
