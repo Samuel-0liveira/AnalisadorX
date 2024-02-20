@@ -9,7 +9,7 @@
 <br>
 <img loading = "lazy" src = "https://img.shields.io/github/watchers/Samuel-0liveira/AnalisadorX"/>
 <img loading = "lazy" src = "https://img.shields.io/github/stars/Samuel-0liveira/AnalisadorX"/>
-<img loading = "lazy" src = "https://img.shields.io/github/forks/Samuel-0liveira/AnalisadorX"/>
+<img loading = "lazy" src = "https://img.shields.io/github/forks/Samuel-0liveira/analisadorX"/>
 </p>
 <br>
 
