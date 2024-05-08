@@ -14,6 +14,7 @@ namespace AnalisadorX
 {
     public partial class Frm_Principal : Form
     {
+        //Verifica e fecha o forms aberto ao trocar para outro.
         public void FecharForms()
         {
             for (int formIndex = Application.OpenForms.Count - 1; formIndex >= 0; formIndex--)
@@ -24,41 +25,6 @@ namespace AnalisadorX
                 }
             }
         }
-
-        /*public static void EncryptConnectionString(bool encrypt, string fileName)
-        {
-            Configuration configuration = null;
-
-            try
-            {
-                
-                configuration = ConfigurationManager.OpenExeConfiguration(fileName);
-
-                ConnectionStringsSection configSection = configuration.GetSection("connectionStrings") as ConnectionStringsSection;
-
-                if ((!(configSection.ElementInformation.IsLocked)) && (!(configSection.SectionInformation.IsLocked)))
-                {
-                    if (encrypt && !configSection.SectionInformation.IsProtected)
-                    {
-                        configSection.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
-                    }
-
-                    if (!encrypt && configSection.SectionInformation.IsProtected)
-                    {
-                        configSection.SectionInformation.UnprotectSection();
-                    }
-
-                    configSection.SectionInformation.ForceSave = true;
-
-                    configuration.Save();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-        */
 
         public Frm_Principal()
         {
@@ -72,7 +38,6 @@ namespace AnalisadorX
 
             configBanco.Dock = DockStyle.Fill;
             configBanco.Show();
-            //EncryptConnectionString(false, "AnalisadorX.exe");
         }
 
         private void entrarToolStripMenuItem_Click(object sender, EventArgs e)
