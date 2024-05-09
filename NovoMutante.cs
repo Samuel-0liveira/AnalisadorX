@@ -19,6 +19,9 @@ namespace AnalisadorX
             InitializeComponent();
         }
 
+        /*Método que valida o nome digitado, caso esteja ok, mantém o aviso da label invisivel,
+         *do contrário, exibi o mesmo e atribuí o valor de false na variável.
+         */
         private bool ValidarNome(string n)
         {
             bool okNome;
@@ -38,6 +41,9 @@ namespace AnalisadorX
             return okNome;
         }
 
+        /*Verifica o que foi digitado no campo de alterego, além do tamanho, é feita uma verificação
+         *no banco de dados para evitar que sejam digitados alteregos duplicados.
+         */
         private bool ValidarAlterego(string a)
         {
             bool okAlterEgo;
@@ -57,6 +63,7 @@ namespace AnalisadorX
             return okAlterEgo;
         }
 
+        //Verifica se o campo idade não está vazio e segue com a exbição da label de aviso caso necessário.
         public bool ValidarIdade(string i)
         {
             bool okIdade;
@@ -75,6 +82,7 @@ namespace AnalisadorX
             return okIdade;
         }
 
+        //Verifica o tamanho do campo filiação e segue com a exbição da label de aviso caso necessário
         private bool ValidarFiliacao(string f)
         {
             bool okFiliacao;
@@ -94,6 +102,7 @@ namespace AnalisadorX
             return okFiliacao;
         }
 
+        //Verifica o tamanho do campo habilidade e segue com a exbição da label de aviso caso necessário.
         private bool ValidarHabilidade(string h)
         {
             bool okHabilidade;
@@ -113,6 +122,9 @@ namespace AnalisadorX
             return okHabilidade;
         }
 
+        /*Analisa o que foi digitado no campo de classificação, caso não se encaixe em uma das 6 opções 
+         *é exibida uma message box alertando.
+         */
         private bool ValidarClassificacao(string c)
         {
             bool okClassificacao;
@@ -134,7 +146,7 @@ namespace AnalisadorX
 
         private void btn_Catalogar_Click(object sender, EventArgs e)
         {
-
+            //As variáveis recebem os resultados (true ou false) das validações.
             bool nomeOk = ValidarNome(txt_Nome.Text);
             bool alteregoOk = ValidarAlterego(txt_AlterEgo.Text);
             bool idadeOk = ValidarIdade(txt_Idade.Text);
@@ -147,6 +159,9 @@ namespace AnalisadorX
             string nome, alterego, filiacao, habilidade, classificacao;
             nome = alterego = filiacao = habilidade = classificacao = "";
 
+           /*Caso todas as validações retornem true, a variável tudoOk recebe true e os valores contidos
+            *nos textbox serão atribuídos em variáveis.
+            */
             if (nomeOk && alteregoOk && idadeOk && filiacaoOk && habilidadeOk && classificacaoOk)
             {
                 nome = txt_Nome.Text;
@@ -162,6 +177,7 @@ namespace AnalisadorX
                 tudoOk = false;
             }
 
+            //Se tudoOk for true, chamamos o método InserirMutante que inclui as informações no banco de dados.
             if (tudoOk == true)
             {
                 conn.InserirMutante(nome, alterego, idade, filiacao, habilidade, classificacao);
