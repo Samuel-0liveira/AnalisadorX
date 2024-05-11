@@ -25,6 +25,7 @@ namespace AnalisadorX.Banco_de_Dados
 
     public class Conexao
     {
+        //Método para descriptografar a senha.
         public static void EncryptConnectionString(bool encrypt, string fileName)
         {
             Configuration configuration = null;

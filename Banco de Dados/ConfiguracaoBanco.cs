@@ -17,7 +17,7 @@ namespace AnalisadorX
 {
     public partial class Frm_ConfiguracaoBanco : Form
     {
-        //Método utilizado para criptografar e descriptografar a string de conexão.
+        //Método utilizado para criptografar a string de conexão.
         public static void EncryptConnectionString(bool encrypt, string fileName)
         {
             Configuration configuration = null;
