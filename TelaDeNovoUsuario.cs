@@ -20,7 +20,7 @@ namespace AnalisadorX
             InitializeComponent();
         }
 
-
+        //Verifica o tamanho do campo nome e segue com a exbição da label de aviso caso necessário.
         private bool ValidarNome(string n)
         {
             bool okNome;
@@ -40,6 +40,9 @@ namespace AnalisadorX
             return okNome;
         }
 
+        /*Verifica o que foi digitado no campo de usuário, além do tamanho, é feita uma verificação
+         *no banco de dados para evitar que sejam digitados usuários duplicados.
+         */
         private bool ValidarUsuario(string u)
         {
             bool okUsuario;
@@ -61,10 +64,16 @@ namespace AnalisadorX
 
         private bool ValidarEmail(string e)
         {
+            //Atribui em uma variável o modelo de e-mail que deve ser seguido
             string modeloEmail = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
             
+            //Verifica se o e-mail digitado está de acordo com o modelo e retorna para a variável true ou false.
             bool okEmail = Regex.IsMatch(e, modeloEmail);
 
+            /*Estrutura condicional que analisa se o que foi digitado no campo de e-mail está de acordo
+             *com o modelo, não está vazio ou se já não existe dentro do banco de dados e segue com a 
+             *exbição da label de aviso caso necessário .
+             */
             if ((!okEmail || e == "") || (!conn.VerificarEmailNoBanco(e)))
             {
                 okEmail = false;
