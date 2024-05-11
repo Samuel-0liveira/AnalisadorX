@@ -90,10 +90,13 @@ namespace AnalisadorX
 
         private bool ValidarSenha(string s)
         {
+            //Atribui em uma variável o modelo de senha que deve ser seguido
             string modeloSenha = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#!])(?:([0-9a-zA-Z$*&@#!])(?!\\1)){8,13}$";
 
+            //Verifica se o e-mail digitado está de acordo com o modelo e retorna para a variável true ou false.
             bool okSenha = Regex.IsMatch(s, modeloSenha);
 
+            //Verifica se o que foi digitado no campo de senha está dentro do modelo ou não está vazio.
             if (!okSenha || s == "")
             {
                 okSenha = false;
@@ -109,6 +112,7 @@ namespace AnalisadorX
             return okSenha;
         }
 
+        //Método que confirma se o que foi digitado em confirmar senha está igual a senha digitada.
         private bool ValidarConfirmarSenha(string cf, string s)
         {
             bool okConfirmarSenha;
@@ -129,6 +133,7 @@ namespace AnalisadorX
 
         private void btn_Cadastrar_Click(object sender, EventArgs e)
         {
+            //As variáveis recebem os resultados (true ou false) das validações.
             bool nomeOk = ValidarNome(txt_Nome.Text);
             bool usuarioOk = ValidarUsuario(txt_Usuario.Text);
             bool emailOk = ValidarEmail(txt_Email.Text);
@@ -139,6 +144,9 @@ namespace AnalisadorX
             string nome ,usuario, email, senha;
             nome = usuario = email = senha = "";
 
+            /*Caso todas as validações retornem true, a variável tudoOk recebe true e os valores contidos
+            *nos textbox serão atribuídos em variáveis.
+            */
             if (nomeOk && usuarioOk && emailOk && senhaOk && confirmarSenhaOk)
             {
                     nome = txt_Nome.Text;
@@ -151,6 +159,7 @@ namespace AnalisadorX
                 tudoOk = false;
             }
 
+            //Se tudoOk for true, chamamos o método InserirUsuario que inclui as informações no banco de dados.
             if (tudoOk == true)
             {
                 conn.InserirUsuario(nome, usuario, email, senha);
