@@ -17,6 +17,7 @@ namespace AnalisadorX
 {
     public partial class Frm_ConfiguracaoBanco : Form
     {
+        //Método utilizado para criptografar e descriptografar a string de conexão.
         public static void EncryptConnectionString(bool encrypt, string fileName)
         {
             Configuration configuration = null;
@@ -56,6 +57,7 @@ namespace AnalisadorX
             InitializeComponent();
         }
 
+        //Verificar se o campo server não ficou vazio e segue com a exbição da label de aviso caso necessário.
         private bool ValidarServer(string s)
         {
             bool okServer;
@@ -73,6 +75,7 @@ namespace AnalisadorX
             return okServer;
         }
 
+        //Verificar se o campo port não ficou vazio e segue com a exbição da label de aviso caso necessário.
         private bool ValidarPort(string p)
         {
             bool okPort;
@@ -91,6 +94,7 @@ namespace AnalisadorX
             return okPort;
         }
 
+        //Verificar se o campo user não ficou vazio e segue com a exbição da label de aviso caso necessário.
         private bool ValidarUser(string u)
         {
             bool okUser;
@@ -109,6 +113,7 @@ namespace AnalisadorX
             return okUser;
         }
 
+        //Verificar se o campo password não ficou vazio e segue com a exbição da label de aviso caso necessário.
         private bool ValidarPassword(string p)
         {
             bool okPass;
@@ -127,6 +132,7 @@ namespace AnalisadorX
             return okPass;
         }
 
+        //Verificar se o campo database não ficou vazio e segue com a exbição da label de aviso caso necessário.
         private bool ValidarDatabase(string d)
         {
             bool okData;
@@ -147,6 +153,7 @@ namespace AnalisadorX
 
         private void btn_SalvarInfo_Click(object sender, EventArgs e)
         {
+            //As variáveis recebem os resultados (true ou false) das validações.
             bool serverOk = ValidarServer(txt_InformacaoServidor.Text);
             bool portOk = ValidarPort(txt_InformacaoPorta.Text);
             bool userOk = ValidarUser(txt_InformacaoUser.Text);
@@ -156,7 +163,10 @@ namespace AnalisadorX
 
             string server, port, user, password, database;
             server = port = user = password = database = "";
-            
+
+            /*Caso todas as validações retornem true, a variável tudoOk recebe true e os valores contidos
+            *nos textbox serão atribuídos em variáveis.
+            */
             if (serverOk && portOk && userOk && passwordOk && databaseOk)
             {
                 server = txt_InformacaoServidor.Text;
@@ -170,6 +180,7 @@ namespace AnalisadorX
                 tudoOk = false;
             }
 
+            //Caso a variável tudoOk seja true, altera a string de conexão, salva, atualiza e criptografa a mesma.
             if (tudoOk == true)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
