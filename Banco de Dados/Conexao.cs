@@ -116,6 +116,7 @@ namespace AnalisadorX.Banco_de_Dados
             return okUsuario;
         }
 
+        //Verifica se o e-mail passado via parâmetro já se encontra cadastrado no banco, utiliza a mesma lógica de verificação do e-mail.
         public bool VerificarEmailNoBanco(string email)
         {
             bool okEmail = false;
