@@ -244,6 +244,7 @@ namespace AnalisadorX.Banco_de_Dados
                 string hashDoBanco = "";
                 byte[] salt = new byte[16];
 
+                //Seleciona o salt e a senha contida no banco de acordo com o usuário passado.
                 cmd.CommandText = "SELECT salt, senha FROM analisador WHERE (usuario = @usuario);";
                 cmd.Parameters.AddWithValue("usuario", usuario);
                 cmd.Connection = con;
@@ -251,6 +252,7 @@ namespace AnalisadorX.Banco_de_Dados
 
                 NpgsqlDataReader reader = cmd.ExecuteReader();
 
+                //Atribui os valores pegos no banco em variáveis.
                 while (reader.Read())
                 {
                     salt = (byte[])reader["salt"];
@@ -259,8 +261,11 @@ namespace AnalisadorX.Banco_de_Dados
 
                 reader.Close();
 
+                //Procura pelos dados cadastrados baseado no usuário e na senha que foi passada.
                 cmd.CommandText = "SELECT * FROM analisador WHERE (usuario = @usuario AND senha = @senha);";
                 cmd.Parameters.AddWithValue("usuario", usuario);
+
+                //Chama o método de Hash CompararSenhas para verificar se a senha com hash do banco bate com a senha digitada + salt.
                 senha = admDeHash.CompararSenhas(senha, salt);
                 cmd.Parameters.AddWithValue("senha", senha);
                 cmd.Connection = con;
