@@ -116,7 +116,7 @@ namespace AnalisadorX.Banco_de_Dados
             return okUsuario;
         }
 
-        //Verifica se o e-mail passado via parâmetro já se encontra cadastrado no banco, utiliza a mesma lógica de verificação do e-mail.
+        //Verifica se o e-mail passado via parâmetro já se encontra cadastrado no banco, utiliza a mesma lógica da verificação de usuário.
         public bool VerificarEmailNoBanco(string email)
         {
             bool okEmail = false;
@@ -156,6 +156,7 @@ namespace AnalisadorX.Banco_de_Dados
             return okEmail;
         }
 
+        //Verifica se o alterego passado via parâmetro já se encontra cadastrado no banco, utiliza a mesma lógica de verificação do e-mail.
         public bool VerificarAlteregoNoBanco(string alterego)
         {
             bool okAlter = false;
