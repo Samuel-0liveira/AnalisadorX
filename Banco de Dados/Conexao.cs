@@ -86,6 +86,7 @@ namespace AnalisadorX.Banco_de_Dados
 
                 NpgsqlCommand cmd = new NpgsqlCommand();
 
+                //Seleciona o usuário da tabela analisador aonde ele for igual ao que foi passado no parâmetro.
                 cmd.CommandText = "SELECT usuario FROM analisador WHERE (usuario = @usuario)";
                 cmd.Parameters.AddWithValue("usuario", usuario);
                 cmd.Connection = con;
