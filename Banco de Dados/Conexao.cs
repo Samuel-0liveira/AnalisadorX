@@ -94,6 +94,7 @@ namespace AnalisadorX.Banco_de_Dados
 
                 NpgsqlDataReader reader = cmd.ExecuteReader();
 
+                //Caso o nome de usuário já esteja cadastrado irá gerar um row e a variável okUsuario irá receber false.
                 if (reader.HasRows)
                 {
                     okUsuario = false;
