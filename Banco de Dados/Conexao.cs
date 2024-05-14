@@ -196,6 +196,7 @@ namespace AnalisadorX.Banco_de_Dados
             return okAlter;
         }
 
+        //Inseri as informações do usuário no banco de dados.
         public void InserirUsuario(string nome, string usuario, string email, string senha)
         {
             try
@@ -211,6 +212,7 @@ namespace AnalisadorX.Banco_de_Dados
                 cmd.Parameters.AddWithValue("nome", nome);
                 cmd.Parameters.AddWithValue("usuario", usuario);
                 cmd.Parameters.AddWithValue("email", email);
+                //Cria o hash para a senha.
                 senha = admDeHash.CriarHash(senha, salt);
                 cmd.Parameters.AddWithValue("senha", senha);
                 cmd.Parameters.AddWithValue("salt", salt);
