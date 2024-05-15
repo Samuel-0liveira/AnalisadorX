@@ -344,7 +344,10 @@ namespace AnalisadorX.Banco_de_Dados
                 //Enquanto a variável reader estiver lendo os resultados, a ação será executada.
                 while(reader.Read())
                 {
+                    //Inicializa a classe de controle.
                     ControleM m = new ControleM();
+
+                    //Lê as informações contidas nas colunas especificadas da tabela mutante e adiciona elas na lista resultados.
                     m.Nome = reader["nome"].ToString();
                     m.Alterego = reader["alterego"].ToString();
                     m.Idade = Convert.ToInt32(reader["idade"]);
