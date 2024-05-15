@@ -341,6 +341,7 @@ namespace AnalisadorX.Banco_de_Dados
 
                 NpgsqlDataReader reader = cmd.ExecuteReader();
 
+                //Enquanto a variável reader estiver lendo os resultados, a ação será executada.
                 while(reader.Read())
                 {
                     ControleM m = new ControleM();
