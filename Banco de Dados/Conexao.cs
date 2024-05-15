@@ -208,6 +208,7 @@ namespace AnalisadorX.Banco_de_Dados
 
                 byte[] salt = admDeHash.GerarSalt();
 
+                //Comando para inserir as informações passadas através de parâmetros no banco de dados.
                 cmd.CommandText = "INSERT INTO analisador (nome, usuario, email, senha, salt) VALUES (@nome, @usuario, @email, @senha, @salt);";
                 cmd.Parameters.AddWithValue("nome", nome);
                 cmd.Parameters.AddWithValue("usuario", usuario);
