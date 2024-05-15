@@ -334,6 +334,7 @@ namespace AnalisadorX.Banco_de_Dados
 
                 con.Open();
 
+                //Comando para selecionar todas as informações da tabela mutante no banco.
                 cmd.CommandText = "SELECT * FROM mutante;";
                 cmd.Connection = con;
                 cmd.ExecuteNonQuery();
