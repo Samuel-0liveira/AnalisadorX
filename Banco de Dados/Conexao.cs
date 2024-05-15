@@ -356,6 +356,7 @@ namespace AnalisadorX.Banco_de_Dados
                     resultados.Add(m);
                 }
 
+                //Adiciona a lista resultados como fonte de dados do ComboBox.
                 combo.DataSource = resultados;
                 combo.DisplayMember = "Alterego";
 
