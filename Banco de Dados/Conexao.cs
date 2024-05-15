@@ -303,6 +303,7 @@ namespace AnalisadorX.Banco_de_Dados
 
                 NpgsqlCommand cmd = new NpgsqlCommand();
 
+                //Guarda as informações passadas via parâmetro na tabela mutante no banco de dados.
                 cmd.CommandText = "INSERT INTO mutante (nome, alterego, idade, filiacao, habilidade, classificacao) VALUES (@nome, @alterego, @idade, @filiacao, @habilidade, CAST (@classificacao AS classificacao_mutante));";
                 cmd.Parameters.AddWithValue("nome", nome);
                 cmd.Parameters.AddWithValue("alterego", alterego);
