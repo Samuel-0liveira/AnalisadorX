@@ -392,6 +392,7 @@ namespace AnalisadorX.Banco_de_Dados
                 //Enquanto a variável reader estiver lendo os resultados, a ação será executada.
                 while (reader.Read())
                 {
+                    //As variáveis do tipo label recebem os resultados das colunas especificadas.
                     nome.Text = reader.GetString(1);
                     alterego.Text = reader.GetString(2);
                     idade.Text = reader.GetInt32(3).ToString();
