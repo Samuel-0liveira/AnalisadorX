@@ -358,6 +358,8 @@ namespace AnalisadorX.Banco_de_Dados
 
                 //Adiciona a lista resultados como fonte de dados do ComboBox.
                 combo.DataSource = resultados;
+
+                //Exibi na ComboBox atributos de uma lista especificada, no caso, Alterego.  
                 combo.DisplayMember = "Alterego";
 
                 con.Close();
