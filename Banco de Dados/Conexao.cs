@@ -381,6 +381,7 @@ namespace AnalisadorX.Banco_de_Dados
 
                 NpgsqlCommand cmd = new NpgsqlCommand();
 
+                //Seleciona as informações da tabela mutante no banco de dados de acordo com a string passada por parâmetro.
                 cmd.CommandText = "SELECT * FROM mutante WHERE (alterego = @alterego);";
                 cmd.Parameters.AddWithValue("alterego", alter);
                 cmd.Connection = con;
