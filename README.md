@@ -3,7 +3,7 @@
 </p>
 
 <p align = "center">
-<img loading = "lazy" src = "https://img.shields.io/badge/Status-Em_desenvolvimento-blue"/>
+<img loading = "lazy" src = "https://img.shields.io/badge/Status-Pausado-red"/>
 <img loading = "lazy" src = "https://img.shields.io/badge/Licença-MIT-purple"/>
 <img loading = "lazy" src = "https://img.shields.io/badge/Linguagem-C%23-239120?"/>
 <br>
@@ -16,7 +16,7 @@
 ## :page_with_curl: Descrição do projeto
 <p>
 Projeto em desenvolvimento, o foco é no backend e o objetivo é estruturar um forms onde é possível criar um usuário, realizar o login do mesmo e cadastrar informações no banco de dados.<br>
-<br>Após logar, será possível editar e excluir algumas informações nesse mesmo banco, tudo isso, dentro da temática dos X-Men. 
+<br>Após logar, será possível editar e excluir algumas informações nesse mesmo banco, tudo isso, dentro da temática dos X-Men.
 </p>
 <br>
 
@@ -37,7 +37,9 @@ Projeto em desenvolvimento, o foco é no backend e o objetivo é estruturar um f
 
 :computer: Veja demonstração do projeto funcionando: <a href="https://github.com/Samuel-0liveira/AnalisadorX/blob/master/doc/FUNCIONALIDADE.md">Funcionalidade</a> :computer:
 
-:speech_balloon: Sugestão de melhoria para o programa? Aprovação de issues? Basta enviar um e-mail para: S.Samuels.a.m@hotmail.com. :speech_balloon:<br>
+:speech_balloon: Para propor melhorias, basta enviar um issue, irei verificar para a aprovação! :speech_balloon:
+
+:speech_balloon: Sugestão de melhoria mais detalhada para o programa? Basta enviar um e-mail para: S.Samuels.a.m@hotmail.com. :speech_balloon:<br>
 
 Caso prefira, pode entrar em contato através de uma das formas a seguir:
 
