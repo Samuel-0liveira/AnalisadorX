@@ -29,6 +29,7 @@ namespace AnalisadorX
         public Frm_Principal()
         {
             InitializeComponent();
+            novoToolStripMenuItem.Visible = false;
 
             FecharForms();
             var configBanco = new Frm_ConfiguracaoBanco()

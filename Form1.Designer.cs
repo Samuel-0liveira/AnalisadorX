@@ -88,14 +88,14 @@
             // novoToolStripMenuItem
             // 
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.novoToolStripMenuItem.Text = "Novo";
             this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
             // 
             // catálogoToolStripMenuItem
             // 
             this.catálogoToolStripMenuItem.Name = "catálogoToolStripMenuItem";
-            this.catálogoToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
+            this.catálogoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.catálogoToolStripMenuItem.Text = "Catálogo";
             this.catálogoToolStripMenuItem.Click += new System.EventHandler(this.catálogoToolStripMenuItem_Click);
             // 
@@ -131,13 +131,13 @@
 
         #endregion
         private System.Windows.Forms.ToolStripMenuItem analisadorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem novoUsuárioToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mutanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem catálogoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuraçãoDoBancoToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem entrarToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem novoUsuárioToolStripMenuItem;
     }
 }
 
