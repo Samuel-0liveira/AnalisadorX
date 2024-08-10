@@ -3,7 +3,7 @@
 </p>
 
 <p align = "center">
-<img loading = "lazy" src = "https://img.shields.io/badge/Status-Pausado-red"/>
+<img loading = "lazy" src = "https://img.shields.io/badge/Status-Em desenvolvimento-blue"/>
 <img loading = "lazy" src = "https://img.shields.io/badge/Licença-MIT-purple"/>
 <img loading = "lazy" src = "https://img.shields.io/badge/Linguagem-C%23-239120?"/>
 <br>
