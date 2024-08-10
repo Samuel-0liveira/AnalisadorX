@@ -313,6 +313,12 @@
     <Compile Include="TelaDeNovoUsuario.Designer.cs">
       <DependentUpon>TelaDeNovoUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaUsuarioLogado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaUsuarioLogado.Designer.cs">
+      <DependentUpon>TelaUsuarioLogado.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Banco de Dados\ConfiguracaoBanco.resx">
       <DependentUpon>ConfiguracaoBanco.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaDeNovoUsuario.resx">
       <DependentUpon>TelaDeNovoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaUsuarioLogado.resx">
+      <DependentUpon>TelaUsuarioLogado.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Banco de Dados\app.manifest" />
     <None Include="packages.config" />

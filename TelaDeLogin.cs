@@ -23,6 +23,8 @@ namespace AnalisadorX
             Conexao con = new Conexao();
             string usuario = txt_User.Text;
             string senha = txt_Senha.Text;
+            bool logado = false;
+            Frm_Principal principal = new Frm_Principal();
 
             //Chama o método RealizarLogin para ver se as informações digitadas batem com a do banco de dados.
             bool loginEfetuado = con.RealizarLogin(usuario, senha);
@@ -31,9 +33,11 @@ namespace AnalisadorX
             if (loginEfetuado)
             {
                 MessageBox.Show("Login realizado com sucesso!");
+                logado = true;
             } else
             {
                 MessageBox.Show("Usuário ou senha incorretos!");
+                logado = false;
             }
         }
     }
