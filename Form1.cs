@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AnalisadorX.Banco_de_Dados;
+using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -29,6 +31,8 @@ namespace AnalisadorX
         public Frm_Principal()
         {
             InitializeComponent();
+
+            NpgsqlConnection con = new NpgsqlConnection("");
 
             FecharForms();
             var configBanco = new Frm_ConfiguracaoBanco()
