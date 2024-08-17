@@ -32,9 +32,6 @@ namespace AnalisadorX
         {
             InitializeComponent();
 
-            NpgsqlConnection con = new NpgsqlConnection("");
-
-            FecharForms();
             var configBanco = new Frm_ConfiguracaoBanco()
             {
                 MdiParent = this
@@ -102,6 +99,18 @@ namespace AnalisadorX
 
             configBanco.Dock = DockStyle.Fill;
             configBanco.Show();
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FecharForms();
+            var usuarioLogado = new Frm_Logado()
+            {
+                MdiParent = this
+            };
+
+            usuarioLogado.Dock = DockStyle.Fill;
+            usuarioLogado.Show();
         }
     }
 }
